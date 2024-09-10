@@ -1,4 +1,7 @@
 //-----------------------------------------------------------------------------------------------------------------------------
+// Oculta o campo 'semForssel' e seu título inicialmente
+        document.getElementById('semForssel').style.display = 'none';
+        document.querySelector('label[for="semForssel"]').style.display = 'none';
 
 document.addEventListener('DOMContentLoaded', function() {
     if (!localStorage.getItem('nomePesquisador')) {
