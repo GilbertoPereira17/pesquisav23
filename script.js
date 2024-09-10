@@ -1,8 +1,4 @@
 //-----------------------------------------------------------------------------------------------------------------------------
-// Oculta o campo 'semForssel' e seu título inicialmente
-        document.getElementById('semForssel').style.display = 'none';
-        document.querySelector('label[for="semForssel"]').style.display = 'none';
-
 document.addEventListener('DOMContentLoaded', function() {
     if (!localStorage.getItem('nomePesquisador')) {
         var nomePesquisador = prompt('Por favor, digite seu nome:');
@@ -10,6 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('nomePesquisador', nomePesquisador);
         }
     }
+        // Oculta o campo 'semForssel' e seu título inicialmente
+        document.getElementById('semForssel').style.display = 'none';
+        document.querySelector('label[for="semForssel"]').style.display = 'none';
+
 });
 
 document.getElementById('formularioPesquisa').addEventListener('submit', function(e) {
