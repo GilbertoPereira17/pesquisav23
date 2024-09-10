@@ -49,6 +49,10 @@ document.getElementById('formularioPesquisa').addEventListener('submit', functio
     document.getElementById('problemaBairro').value = '';
     document.getElementById('escolhaVereador').value = '';
     document.getElementById('telefone').value = '';
+
+    // Oculta o campo 'semForssel' e seu título inicialmente
+    document.getElementById('semForssel').style.display = 'none';
+    document.querySelector('label[for="semForssel"]').style.display = 'none';
 });
 
 
