@@ -148,3 +148,17 @@ function exportarDadosParaCSV() {
 
     link.click(); // Inicia o download
 }
+// Função para exibir ou ocultar o campo semForssel e seu título
+document.getElementById('candidatosDisco').addEventListener('change', function() {
+    var valorSelecionado = this.value;
+    var campoSemForssel = document.getElementById('semForssel');
+    var labelSemForssel = document.querySelector('label[for="semForssel"]');
+    
+    if (valorSelecionado === 'Forssel Ex-Prefeito') {
+        campoSemForssel.style.display = 'block';
+        labelSemForssel.style.display = 'block';
+    } else {
+        campoSemForssel.style.display = 'none';
+        labelSemForssel.style.display = 'none';
+    }
+});
